@@ -103,18 +103,19 @@ The analysis explores relationships between passenger characteristics and surviv
 
 The project provides reproducible Python scripts and a Jupyter Notebook for further analysis.
 
-Live Demo
-Interactive / Executed Notebook
+## Live Demo
 
-👉 Open Live Demo
+🚀 Live Demo:
+https://avip-titanic-eda-byte.onrender.com/task_2_titanic_eda.html
 
-The live demo contains the executed Jupyter Notebook with the analysis, visualizations, and findings.
+## GitHub Repository
 
-GitHub Repository
+📂 GitHub:
+https://github.com/mdisrak21/DS_2_Titanic_Dataset_EDA_BYTE
 
-👉 View GitHub Repository
 
 Technologies
+
 Python
 Pandas
 NumPy
