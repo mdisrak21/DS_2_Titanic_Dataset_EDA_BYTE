@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Generated data
+data/titanic_cleaned.csv
+
+# Generated outputs
+outputs/*.png
+outputs/*.txt
