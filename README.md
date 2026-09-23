@@ -17,7 +17,7 @@ This project completes **AVIP 2026 Data Science Basic Task 2 — Titanic Dataset
 
 Dataset: Titanic dataset from the public `seaborn-data` repository.
 
-Source:
+Source:  
 https://raw.githubusercontent.com/mwaskom/seaborn-data/master/titanic.csv
 
 The project includes a fetch-and-clean script so the dataset can be reproduced without committing the raw dataset to GitHub.
@@ -38,59 +38,59 @@ AVIP_DS_Task2_Titanic_EDA/
 │   └── run_eda.py
 └── outputs/
     └── README.txt
-```
-
-## Run Locally
+Run Locally
 
 From the project root:
 
-```bash
 python -m pip install -r requirements.txt
 python src/prepare_data.py
 python src/run_eda.py
-```
 
 Then open:
 
-```text
 notebooks/task_2_titanic_eda.ipynb
-```
 
 For an executed notebook:
 
-```bash
 python -m jupyter nbconvert --to notebook --execute notebooks/task_2_titanic_eda.ipynb --output task_2_titanic_eda_executed --output-dir notebooks
-```
-
-## Generated Outputs
+Generated Outputs
 
 After running the scripts/notebook:
 
-- `data/titanic_cleaned.csv`
-- `outputs/survival_rate_by_class_gender.png`
-- `outputs/age_distribution.png`
-- `outputs/correlation_heatmap.png`
-- `outputs/insights_summary.txt`
-
-## Cleaning & Feature Engineering
+data/titanic_cleaned.csv
+outputs/survival_rate_by_class_gender.png
+outputs/age_distribution.png
+outputs/correlation_heatmap.png
+outputs/insights_summary.txt
+Cleaning & Feature Engineering
 
 The workflow:
-- removes duplicate rows;
-- fills missing `age` values using the median age;
-- fills missing `embarked` values using the mode;
-- fills missing `fare` values using the median fare;
-- converts `sex` and `embarked` into numeric indicator features;
-- creates `family_size` from `sibsp + parch + 1`;
-- creates `is_alone` to indicate whether the passenger travelled alone.
 
-The raw dataset is not committed by default; the fetch instructions in `data/README.md` are the reproducible source.
+removes duplicate rows;
+fills missing age values using the median age;
+fills missing embarked values using the mode;
+fills missing fare values using the median fare;
+converts sex and embarked into numeric indicator features;
+creates family_size from sibsp + parch + 1;
+creates is_alone to indicate whether the passenger travelled alone.
 
-## Technologies
+The raw dataset is not committed by default; the fetch instructions in data/README.md are the reproducible source.
+
+Live Demo
+
+Live HTML Notebook:
+https://avip-titanic-eda-byte.onrender.com/task_2_titanic_eda.html
+
+GitHub Repository
+
+https://github.com/mdisrak21/DS_2_Titanic_Dataset_EDA_BYTE
+
+Technologies
 
 Python, Pandas, NumPy, Matplotlib, Seaborn, Jupyter Notebook.
 
-## Internship
+Internship
 
-**Program:** B.Y.T.E by Arithmatrix — AVIP 2026  
-**Domain:** Data Science  
-**Task:** Basic Task 2 — Titanic Dataset EDA
+Program: B.Y.T.E by Arithmatrix — AVIP 2026
+Domain: Data Science
+Task: Basic Task 2 — Titanic Dataset EDA
